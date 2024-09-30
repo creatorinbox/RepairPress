@@ -1,4 +1,7 @@
 wp-config.php
 wp-content/cache/
 node_modules/
-.htaccess
+cgi-bin
+.well-known
+error_log
+robots.txt
