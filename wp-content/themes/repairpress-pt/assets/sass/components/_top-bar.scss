@@ -1,0 +1,58 @@
+/* 05.01. Top Bar */
+.top {
+	background: linear-gradient(to bottom, #25426f 0%, #223d66 100%);
+	border-bottom: 1px solid #446596;
+	color: #aab0be;
+	position: relative;
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		background-color: #2f538a;
+	}
+
+	&::before {
+		@media (min-width: $screen-md-min) {
+			bottom: -2px;
+			left: 0;
+			height: 22px;
+			width: calc(50% - #{($container-large-desktop - $grid-gutter-width) / 2} + 320px);
+			border-top: 1px solid #446596;
+		}
+	}
+
+	&::after {
+		@media (min-width: $screen-md-min) {
+			bottom: -14px;
+			width: 28px;
+			height: 28px;
+			transform: rotate(145deg);
+			left: calc(50% - #{($container-large-desktop - $grid-gutter-width) / 2} + 303px);
+			border-left: 1px solid #446596;
+		}
+	}
+
+	&__tagline {
+		text-align: center;
+		padding: 10px 0 3px;
+
+		@media (min-width: $screen-md-min) {
+			float: left;
+			margin-left: 260px;
+			padding: 11.5px 0;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			margin-left: 360px;
+		}
+	}
+
+	&__menu {
+		text-align: center;
+
+		@media (min-width: $screen-md-min) {
+			float: right;
+		}
+	}
+}

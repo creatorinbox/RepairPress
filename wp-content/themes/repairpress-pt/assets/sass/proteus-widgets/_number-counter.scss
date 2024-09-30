@@ -1,0 +1,48 @@
+/* 05.28. Number Counter */
+.number-counters {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: $screen-md-min) {
+		flex-direction: row;
+	}
+}
+
+.number-counter {
+	flex: 1;
+	text-align: center;
+	transition: $primary-transition;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	padding: 30px 0;
+
+	@media (min-width: $screen-md-min) {
+		border-right: 1px solid rgba(0, 0, 0, .1);
+		border-bottom: 0;
+		padding: 0;
+	}
+
+	&:first-of-type {
+		padding-top: 0;
+	}
+
+	&:last-of-type {
+		border-right: 0;
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	&__number {
+		border-top: 0;
+		font-weight: bold;
+		color: $headings-color;
+		font-size: 60px;
+		line-height: 1;
+	}
+
+	&__title {
+		font-size: 16px;
+		color: #aaaaaa;
+		margin-top: 8px;
+		font-family: $secondary-font;
+	}
+}

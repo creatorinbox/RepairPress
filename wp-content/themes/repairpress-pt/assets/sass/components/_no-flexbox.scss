@@ -1,0 +1,48 @@
+/* 05.20. Fallback for no Flexbox */
+.no-flexbox {
+	.header {
+		display: inline-block;
+		width: 100%;
+
+		&__logo,
+		&__navigation,
+		&__widgets,
+		&__navigation-widgets {
+			display: inline-block;
+			width: 100%;
+		}
+
+		&__widgets {
+			.widget {
+				margin: 30px 0;
+			}
+
+			.icon-box {
+				padding-left: 0;
+				margin-left: 0;
+				border-left: 0;
+			}
+		}
+
+		&__navigation {
+			border-radius: 2px;
+			margin-bottom: 0;
+		}
+
+		&__navigation-widgets {
+			background-color: #2f538a;
+			margin-bottom: 0;
+
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+
+		&__container {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}

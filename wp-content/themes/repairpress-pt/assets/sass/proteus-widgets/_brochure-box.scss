@@ -1,0 +1,50 @@
+/* 05.34. Brochure Box */
+.brochure-box {
+	position: relative;
+	background-color: $light-color;
+	border-radius: 2px;
+	display: block;
+	padding: 7.5px;
+	transition: $primary-transition;
+
+	&__icon {
+		vertical-align: middle;
+	}
+
+	.fa {
+		transition: $primary-transition;
+		display: inline-block;
+		font-size: 20px;
+		color: $text-color;
+		background-color: #ffffff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+		border-radius: 2px;
+		width: 45px;
+		height: 45px;
+		text-align: center;
+		line-height: 45px;
+	}
+
+	&__text {
+		transition: $primary-transition;
+		display: inline-block;
+		color: $text-color;
+		font-weight: bold;
+		font-size: 14px;
+		margin-left: 10px;
+	}
+
+	&:hover {
+		text-decoration: none;
+
+		.brochure-box__text {
+			color: $headings-color;
+		}
+	}
+}
+
+// scss-lint:disable SelectorFormat
+
+.widget-brochure-box + .widget-brochure-box {
+	margin-top: -35px;
+}

@@ -1,0 +1,22 @@
+/* 05.12. Meta Data */
+.meta {
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	padding: 19px 0;
+	margin-bottom: 25px;
+	color: #aaaaaa;
+
+	a {
+		color: #aaaaaa;
+
+		&:hover {
+			color: #666666;
+		}
+	}
+
+	&__separator {
+		margin: 0 10px;
+		color: #dddddd;
+	}
+}

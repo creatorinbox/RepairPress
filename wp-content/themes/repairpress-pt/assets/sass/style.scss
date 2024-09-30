@@ -1,0 +1,344 @@
+/*
+Theme Name: RepairPress PT
+Theme URI: https://demo.proteusthemes.com/repairpress/
+Author: ProteusThemes
+Author URI: https://www.proteusthemes.com/
+Description: RepairPress WordPress Theme.
+Version: 0.0.0-tmp
+License: GPL 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text domain: repairpress-pt
+*/
+
+/*
+ TABLE OF CONTENTS
+	01. Project variables............Imported variables
+	02. Twitter Bootstrap............Remove what is not neccessary
+	03. Tags.........................Like <body>, <h1> etc.
+	04. Helpers and utility classes..The general styles like .push-down-15 etc.
+	05. Components...................Imported files, like partials, Compass etc.
+		05.01. Top Bar
+		05.02. Header
+		05.03. Main title
+		05.04. Breadcrumbs
+		05.05. Sidebar
+		05.06. Error 404
+		05.07. Footer
+		05.08. Top navigation
+		05.09. Main navigation
+		05.10. Jumbotron
+		05.11. Pagination
+		05.12. Meta data
+		05.13. Comments
+		05.14. Buttons
+		05.15. Pricing table
+		05.16. Logo panel
+		05.17. Button with title
+		05.18. Contact form 7
+		05.19. Visual composr
+		05.20. No flexbox
+		05.21. Icon box
+		05.22. Social icons
+		05.23. Featured page
+		05.24. Icon menu
+		05.25. Steps
+		05.26. Call to action
+		05.27. Latest news
+		05.28. Number counte
+		05.29. Accordion
+		05.30. Testimonials
+		05.31. Person profil
+		05.32. Skype button
+		05.33. Opening times
+		05.34. Brochure box
+		05.35. WP Specific
+		05.36. WP Widgets
+*/
+
+/*------------------------------------*\
+	01. Project variables
+
+	only visible in SASS source files
+\*------------------------------------*/
+
+@import 'vars';
+
+/*------------------------------------*\
+	02. Twitter Bootstrap
+
+	Remove what is not necessary
+\*------------------------------------*/
+
+// Core variables and mixins
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+// Reset and dependencies
+@import 'bootstrap/normalize';
+@import 'bootstrap/print';
+// @import 'bootstrap/glyphicons';
+
+// Core CSS
+@import 'bootstrap/scaffolding';
+@import 'bootstrap/type';
+@import 'bootstrap/code';
+@import 'bootstrap/grid';
+@import 'bootstrap/tables';
+@import 'bootstrap/forms';
+@import 'bootstrap/buttons';
+
+// Components
+@import 'bootstrap/component-animations';
+// @import 'bootstrap/dropdowns';
+// @import 'bootstrap/button-groups';
+// @import 'bootstrap/input-groups';
+// @import 'bootstrap/navs';
+@import 'bootstrap/navbar';
+// @import 'bootstrap/breadcrumbs';
+// @import 'bootstrap/pagination';
+// @import 'bootstrap/pager';
+// @import 'bootstrap/labels';
+// @import 'bootstrap/badges';
+// @import 'bootstrap/jumbotron';
+// @import 'bootstrap/thumbnails';
+// @import 'bootstrap/alerts';
+// @import 'bootstrap/progress-bars';
+// @import 'bootstrap/media';
+// @import 'bootstrap/list-group';
+// @import 'bootstrap/panels';
+@import 'bootstrap/responsive-embed';
+// @import 'bootstrap/wells';
+// @import 'bootstrap/close';
+
+// Components w/ JavaScript
+// @import 'bootstrap/modals';
+// @import 'bootstrap/tooltip';
+// @import 'bootstrap/popovers';
+@import 'bootstrap/carousel';
+
+// Utility classes
+@import 'bootstrap/utilities';
+@import 'bootstrap/responsive-utilities';
+
+/*------------------------------------*\
+	03. Tags
+\*------------------------------------*/
+
+body {
+	.boxed-container {
+		background-color: #ffffff;
+		overflow-x: hidden;
+	}
+
+	&.boxed {
+		> .boxed-container {
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+			max-width: 100%;
+
+			@media (min-width: $screen-sm-min) {
+				width: ($container-sm + 60px);
+			}
+
+			@media (min-width: $screen-md-min) {
+				width: ($container-md + 60px);
+			}
+
+			@media (min-width: $screen-lg-min) {
+				width: ($container-lg + 60px);
+			}
+		}
+
+		.jumbotron {
+			&-content {
+				@media (min-width: 1380px) {
+					top: 20%;
+				}
+
+				@media (min-width: 1700px) {
+					top: 20%;
+				}
+
+				&__title {
+					h1 {
+						@media (min-width: 1380px) {
+							font-size: 36px;
+							margin-bottom: 12px;
+						}
+					}
+				}
+
+				&__description {
+					@media (min-width: 1380px) {
+						font-size: 14px;
+					}
+
+					.btn {
+						@media (min-width: 1380px) {
+							margin-top: 15px;
+						}
+					}
+				}
+			}
+
+			&__control {
+				&.left {
+					@media (min-width: 1380px) {
+						left: inherit;
+						right: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/*------------------------------------*\
+	04. Helpers and very general classes
+\*------------------------------------*/
+
+.screen-reader-text {
+	// scss-lint:disable PlaceholderInExtend
+	@extend .sr-only;
+}
+
+.wp-post-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.more-link,
+.read-more {
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: $primary-font;
+	font-size: 14px;
+	line-height: $line-height-base;
+
+	&:hover,
+	&:focus,
+	&:visited {
+		text-decoration: none;
+	}
+
+	&::after {
+		position: absolute;
+		content: '\f0da';
+		font-family: 'FontAwesome';
+		right: -15px;
+		top: calc(50% - 9px);
+		font-size: 12px;
+	}
+}
+
+.featured-widget {
+	// -scss-lint:disable ColorVariable
+	padding: 30px;
+	background-color: $body-bg;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.widget-title {
+	position: relative;
+	font-size: 27px;
+	margin-bottom: 25px;
+	line-height: 1.2;
+
+	&--big {
+		.widget-title {
+			font-size: 27px;
+			margin-bottom: 36px;
+
+			@media (min-width: $screen-md-min) {
+				font-size: 36px;
+			}
+		}
+	}
+
+	// this element is added with JS
+	&__line {
+		border-bottom: 1px solid rgba(0, 0, 0, .08);
+		position: absolute;
+		right: 0;
+		top: 50%;
+	}
+}
+
+.icon-container {
+	display: inline-block;
+	margin-right: 5px;
+	width: 20px;
+	text-align: center;
+
+	.fa {
+		font-size: 18px;
+	}
+}
+
+/*------------------------------------*\
+	05. Components
+\*------------------------------------*/
+
+// Layout
+@import 'components/top-bar';
+@import 'components/header';
+@import 'components/main-title';
+@import 'components/breadcrumbs';
+@import 'components/sidebar';
+@import 'components/error-404';
+@import 'components/footer';
+
+// Elements
+@import 'components/top-navigation';
+@import 'components/main-navigation';
+@import 'components/jumbotron';
+@import 'components/pagination';
+@import 'components/meta';
+@import 'components/comments';
+@import 'components/buttons';
+@import 'components/pricing-table';
+@import 'components/logo-panel';
+@import 'components/button-with-title';
+@import 'components/contact-form-7';
+@import 'components/visual-composer';
+@import 'components/no-flexbox';
+
+// Proteus Widgets
+@import 'proteus-widgets/icon-box';
+@import 'proteus-widgets/social-icons';
+@import 'proteus-widgets/featured-page';
+@import 'proteus-widgets/icon-menu';
+@import 'proteus-widgets/steps';
+@import 'proteus-widgets/call-to-action';
+@import 'proteus-widgets/latest-news';
+@import 'proteus-widgets/number-counter';
+@import 'proteus-widgets/accordion';
+@import 'proteus-widgets/testimonials';
+@import 'proteus-widgets/person-profile';
+@import 'proteus-widgets/skype-button';
+@import 'proteus-widgets/opening-times';
+@import 'proteus-widgets/brochure-box';
+
+// WordPress Specific
+@import 'components/wp';
+@import 'components/wp-widgets';
+
+// Fonts
+@import '../../bower_components/font-awesome/scss/font-awesome';
+
+/*------------------------------------*\
+	The End :)
+\*------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

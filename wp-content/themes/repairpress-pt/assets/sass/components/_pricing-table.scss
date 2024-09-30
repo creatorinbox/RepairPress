@@ -1,0 +1,69 @@
+// 05.15. Pricing Table
+.repairpress-table {
+	width: 100%;
+	max-width: 100%;
+	font-family: $secondary-font;
+	color: $text-color;
+	font-size: 16px;
+
+	thead {
+		th {
+			background-color: $primary-color;
+			padding: 15px 20px;
+			border-radius: 2px;
+			color: #ffffff;
+			border-right: 2px solid transparent;
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid transparent;
+			background-clip: padding-box;
+			font-family: $primary-font;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			&:first-of-type {
+				background-color: transparent;
+				box-shadow: 0 0 0 1px #eeeeee inset;
+				color: $headings-color;
+			}
+
+			&:last-of-type {
+				border-right: 0;
+			}
+		}
+	}
+
+	tbody {
+		td {
+			background-color: #ffffff;
+			box-shadow: 0 0 0 1px #eeeeee inset;
+			padding: 15px 20px;
+			border-right: 2px solid transparent;
+			border-bottom: 1px solid transparent;
+			border-top: 1px solid transparent;
+			background-clip: padding-box;
+			border-radius: 2px;
+
+			&:first-of-type {
+				box-shadow: none;
+				background-color: $light-color;
+				font-family: $primary-font;
+				font-weight: bold;
+			}
+
+			&:last-of-type {
+				border-right: 0;
+			}
+		}
+	}
+}
+
+// Default Table
+.table {
+	thead {
+		th {
+			font-family: $primary-font;
+			font-size: 16px;
+			color: $headings-color;
+		}
+	}
+}

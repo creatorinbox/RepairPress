@@ -1,0 +1,86 @@
+/* 05.31. Person Profile */
+.person-profile {
+	&__image {
+		width: 100%;
+		height: auto;
+		border-top-right-radius: 2px;
+		border-top-left-radius: 2px;
+	}
+
+	&__container {
+		border-top: 3px solid #dddddd;
+		border-bottom: 1px solid #eeeeee;
+		border-right: 1px solid #eeeeee;
+		border-left: 1px solid #eeeeee;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
+
+	&__name {
+		margin-top: 16px;
+	}
+
+	&__description {
+		font-size: 14px;
+		font-family: $secondary-font;
+	}
+
+	&__content {
+		position: relative;
+		padding: 15px 30px 14px;
+	}
+
+	&__tag {
+		border-radius: 2px;
+		font-size: 14px;
+		position: absolute;
+		padding: 3.5px 10px;
+		top: -40px;
+		background-color: $primary-color;
+		color: #ffffff;
+		font-weight: bold;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+		font-family: $primary-font;
+	}
+
+	&__social-icons {
+		position: relative;
+		padding: 13px 30px 11px;
+		text-align: right;
+
+		&::before {
+			position: absolute;
+			content: '';
+			background-color: #e6e6e6;
+			left: 30px;
+			right: 30px;
+			height: 1px;
+			top: 0;
+		}
+
+		span {
+			font-size: 16px;
+			font-weight: bold;
+			padding-right: 13px;
+			display: none;
+			font-family: $primary-font;
+
+			@media (min-width: $screen-lg-min) {
+				display: inline-block;
+				margin-top: 6px;
+				float: left;
+			}
+		}
+	}
+
+	&__social_icon {
+		font-size: 24px;
+		margin-left: 2px;
+		vertical-align: middle;
+		color: #bbbbbb;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}

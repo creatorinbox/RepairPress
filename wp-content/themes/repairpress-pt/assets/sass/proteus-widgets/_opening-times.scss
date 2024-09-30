@@ -1,0 +1,30 @@
+/* 05.33. Opening Time */
+.time-table {
+	.week-day {
+		font-family: $secondary-font;
+		position: relative;
+		clear: both;
+		padding: 5px 0;
+		font-size: 14px;
+
+		dt {
+			float: left;
+			padding-right: 10px;
+			font-weight: normal;
+		}
+
+		dd {
+			float: right;
+			padding-left: 10px;
+		}
+
+		&.today {
+			color: $headings-color;
+
+			dt,
+			dd {
+				font-weight: bold;
+			}
+		}
+	}
+}

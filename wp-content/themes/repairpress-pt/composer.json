@@ -1,0 +1,29 @@
+{
+    "name":         "proteusthemes/repairpress-pt",
+    "description":  "WordPress theme by ProteusThemes.",
+    "license":      "GPL-2.0+",
+    "type":         "project",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url":  "https://github.com/proteusthemes/visual-composer-elements.git"
+      },
+      {
+        "type": "vcs",
+        "url":  "git@bitbucket.org:proteusnet/theme-registration-and-updates.git"
+      },
+      {
+          "type": "vcs",
+          "url": "git@github.com:TGMPA/TGM-Plugin-Activation.git"
+      }
+    ],
+    "require": {
+        "php":                                           "^7.2|^8.0",
+        "tgmpa/tgm-plugin-activation":                   "dev-develop",
+        "proteusthemes/wai-aria-walker-nav-menu":        "^1.2.1",
+        "proteusthemes/wp-customizer-utilities":         "~1.1.0",
+        "proteusthemes/proteuswidgets":                  "^3.16.5",
+        "proteusthemes/visual-composer-elements":        "^0.5.0",
+        "proteusthemes/theme-registration-and-updates":  "^2.4.1"
+    }
+}

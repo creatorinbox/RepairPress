@@ -1,0 +1,43 @@
+/* 05.06. Error 404 */
+.error-404 {
+	text-align: center;
+	margin-top: 60px;
+
+	@media (min-width: $screen-md-min) {
+		margin-top: 120px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	&__content {
+		margin-bottom: 30px;
+
+		@media (min-width: $screen-md-min) {
+			margin-bottom: 120px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		font-family: $secondary-font;
+		margin-bottom: 30px;
+	}
+
+	// scss-lint:disable SelectorFormat
+
+	.widget_search {
+		@media (min-width: $screen-md-min) {
+			display: inline-block;
+			text-align: center;
+		}
+
+		.search-form {
+			@media (min-width: $screen-md-min) {
+				width: 400px;
+			}
+		}
+	}
+}

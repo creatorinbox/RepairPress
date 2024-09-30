@@ -1,0 +1,33 @@
+/* 05.19. Visual Composer */
+
+// scss-lint:disable ImportantRule
+
+.wpb-js-composer {
+
+	.wpcf7-select,
+	.wpcf7-text,
+	.wpcf7-textarea {
+		margin-bottom: 20px !important;
+	}
+
+	.opening-time {
+		padding: 30px;
+		background-color: #ffffff;
+		box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+	}
+
+	.call-to-action__button p {
+		margin: 0;
+	}
+
+	.testimonial .widgettitle {
+		text-align: center;
+		font-size: 36px;
+		margin-bottom: 35px;
+	}
+
+	.logo-panel img {
+		max-width: 100%;
+		margin-top: 35px;
+	}
+}

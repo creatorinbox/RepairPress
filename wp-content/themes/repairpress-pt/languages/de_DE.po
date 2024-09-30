@@ -1,0 +1,348 @@
+# Copyright (C) 2015 ProteusThemes
+# This file is distributed under the GPL 2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: RepairPress PT 0.0.0-tmp\n"
+"Report-Msgid-Bugs-To: http://support.proteusthemes.com/\n"
+"POT-Creation-Date: 2024-09-23 20:18:34+00:00\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: 404.php:14
+msgid "404 Picture"
+msgstr "404 Bild"
+
+#: 404.php:16
+msgid "Looks like something went wrong"
+msgstr "Es scheint etwas schief gegangen zu sein"
+
+#. translators: the first %s for line break, the second and third %s for link
+#. to home page wrap
+#: 404.php:21
+msgid ""
+"Page you are looking for is not here. %s Go %s Home %s or try to search:"
+msgstr ""
+"Die von Ihnen gesuchte Seite ist nicht hier. %s Gehen Sie zur %s Startseite "
+"%s oder versuchen Sie zu suchen:"
+
+#: comments.php:21
+msgid "Comment Navigation"
+msgstr "Kommentar-Navigation"
+
+#: comments.php:22
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: comments.php:23
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: comments.php:32 comments.php:92
+msgid "Comments for this post are closed."
+msgstr "Kommentare für diesen Beitrag sind geschlossen."
+
+#: comments.php:43
+msgid "Write a Comment"
+msgstr "Einen Kommentar schreiben"
+
+#: comments.php:55
+msgid "First and Last name"
+msgstr "Vor- und Nachname"
+
+#: comments.php:61
+msgid "E-mail Address"
+msgstr "E-Mail-Adresse"
+
+#: comments.php:67
+msgid "Website"
+msgstr "Internetseite"
+
+#: comments.php:72
+msgid ""
+"Save my name, email, and website in this browser for the next time I comment."
+msgstr ""
+
+#: header.php:34
+msgid "Top Menu"
+msgstr "Startmenü"
+
+#: header.php:72
+msgid "MENU"
+msgstr "MENÜ"
+
+#: header.php:81
+#, fuzzy
+msgid "Main Menu"
+msgstr "Hauptmenü"
+
+#: inc/filters.php:409
+msgid "After import setup ended!"
+msgstr ""
+
+#: inc/filters.php:417
+msgid ""
+"Please try to manually import the demo data. Here are instructions on how to "
+"do that: %sDocumentation: Import XML File%s"
+msgstr ""
+
+#: inc/filters.php:449
+msgid "ProteusThemes Widgets"
+msgstr ""
+
+#. translators: %s represents a number
+#: inc/helpers.php:35
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s Kommentar"
+msgstr[1] "%s Kommentare"
+
+#: inc/helpers.php:219
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: inc/helpers.php:223
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar wartet auf Moderation."
+
+#: searchform.php:11
+msgid "Search for:"
+msgstr "Suchen nach:"
+
+#: searchform.php:12
+msgid "Search ..."
+msgstr "Suche ..."
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: template-parts/content-none.php:18
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Sind Sie bereit, Ihren ersten Eintrag zu veröffentlichen? <a href=\"%1$s"
+"\">Starten Sie hier</a>."
+
+#: template-parts/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Es tut uns leid, aber es haben sich keine Übereinstimmungen mit Ihren "
+"Suchbegriffen ergeben. Bitte versucfhen Sie es mit anderen Stichwörtern "
+"erneut."
+
+#: template-parts/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es scheint, dass wir das von Ihnen Gesuchte nicht finden können. Vielleicht "
+"kann eine Suche helfen."
+
+#. translators: after that comes pagination like 1, 2, 3 ... 10
+#: template-parts/content-page.php:23 template-parts/content-single.php:32
+msgid "Pages:"
+msgstr "Seiten:"
+
+#. translators: %s: Name of current post
+#: template-parts/content.php:38
+msgid "Read more %s"
+msgstr "Mehr lesen %s"
+
+#: template-parts/main-title.php:61
+msgid "Search Results For"
+msgstr "Ergebnisse suchen für"
+
+#: template-parts/main-title.php:63
+msgid "Error 404"
+msgstr "Fehler 404"
+
+#: template-parts/meta.php:8
+msgid "By "
+msgstr "Von"
+
+#. Theme Name of the plugin/theme
+msgid "RepairPress PT"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://demo.proteusthemes.com/repairpress/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "RepairPress WordPress Theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ProteusThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.proteusthemes.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page With Layer/Revolution Slider"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page With Slider"
+msgstr ""
+
+#: comments.php:81
+msgctxt "noun"
+msgid "Your comment"
+msgstr "Ihr Kommentar"
+
+#: functions.php:90
+msgctxt "backend"
+msgid "Main Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:91
+msgctxt "backend"
+msgid "Top Bar Menu"
+msgstr "Startleisten-Menü"
+
+#: inc/documentation-link.php:9 inc/documentation-link.php:10
+#: inc/documentation-link.php:21
+msgctxt "backend"
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: inc/documentation-link.php:24
+msgctxt "backend"
+msgid "Click here to see online documentation of the theme!"
+msgstr "Hier klicken, um die Online-Dokumentation des Motivs zu sehen!"
+
+#: inc/filters.php:253
+msgctxt "backend"
+msgid "Widget Style"
+msgstr "Widget-Stil"
+
+#: inc/filters.php:255
+msgctxt "backend"
+msgid "Set a box around the widget"
+msgstr "Legen Sie einen Rahmen um das Widget"
+
+#: inc/filters.php:261
+msgctxt "backend"
+msgid "Widget Title"
+msgstr "Widget-Titel"
+
+#: inc/filters.php:263
+msgctxt "backend"
+msgid "Exposed title (bigger font, thin line)"
+msgstr "Exponierter Titel (größere Schrift, dünne Linie)"
+
+#: inc/theme-sidebars.php:12
+msgctxt "backend"
+msgid "Blog Sidebar"
+msgstr "Blog-Seitenleiste"
+
+#: inc/theme-sidebars.php:14
+msgctxt "backend"
+msgid "Sidebar on the blog layout."
+msgstr "Seitenleiste auf dem Blog-Layout."
+
+#: inc/theme-sidebars.php:26
+msgctxt "backend"
+msgid "Regular Page Sidebar"
+msgstr "Normale Seitenleiste für die Seite"
+
+#: inc/theme-sidebars.php:28
+msgctxt "backend"
+msgid "Sidebar on the regular page."
+msgstr "Seitenleiste auf der normalen Seite."
+
+#: inc/theme-sidebars.php:41
+msgctxt "backend"
+msgid "Shop Sidebar"
+msgstr "Shop-Seitenleiste"
+
+#: inc/theme-sidebars.php:43
+msgctxt "backend"
+msgid "Sidebar for the shop page"
+msgstr "Seitenleiste für die Shop-Seite"
+
+#: inc/theme-sidebars.php:56
+msgctxt "backend"
+msgid "Header"
+msgstr "Kopfzeile"
+
+#: inc/theme-sidebars.php:58
+msgctxt "backend"
+msgid "Header widget area for Icon Box and Buttons."
+msgstr "Kopfzeilen-Widget-Bereich für Symbol-Box und Buttons."
+
+#: inc/theme-sidebars.php:67
+msgctxt "backend"
+msgid "Navigation"
+msgstr "Navigation"
+
+#: inc/theme-sidebars.php:69
+msgctxt "backend"
+msgid ""
+"Widgets next to the main menu. Anticipated for the Social Icons widget. If "
+"no widgets here, menu will have more space (fullwidth)."
+msgstr ""
+"Widgets neben dem Hauptmenü. Vorgesehen für das Soziale Symbole-Widget. Gibt "
+"es hier keine Widgets, hat das Menü mehr Platz (volle Breite)."
+
+#: inc/theme-sidebars.php:82
+msgctxt "backend"
+msgid "Footer"
+msgstr "Fußzeile"
+
+#: inc/theme-sidebars.php:84
+msgctxt "backend"
+msgid ""
+"Footer area works best with %d widgets. This number can be changed in the "
+"Appearance &rarr; Customize &rarr; Theme Options &rarr; Footer."
+msgstr ""
+"Der Fußzeilenbereich funktioniert mit %d Widgets am besten. Diese Zahl kann "
+"in Ansicht &rarr; Anpassen &rarr; Motivoptionen &rarr; Fußzeile geändert "
+"werden."
+
+#: inc/filters.php:93
+msgctxt "custom read more text after the post excerpts"
+msgid " &hellip;"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported
+#. by Roboto or Open Sans, translate this to 'off'. Do not translate into your
+#. own language.
+#: inc/filters.php:216
+msgctxt "Roboto or Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+#: inc/helpers.php:94
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: inc/helpers.php:213
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s um %2$s"

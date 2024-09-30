@@ -1,0 +1,117 @@
+/* 05.27. Latest News */
+.latest-news {
+	position: relative;
+	display: block;
+	transition: $primary-transition;
+
+	&__date {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		left: 20px;
+		position: absolute;
+		bottom: 20px;
+		color: $text-color;
+		font-family: $secondary-font;
+
+		&__month {
+			padding-right: 5px;
+		}
+	}
+
+	&__image {
+		@media (min-width: $screen-xs-min) {
+			display: inline-block;
+			width: 50%;
+		}
+
+		img {
+			width: 100%;
+
+			@media (min-width: $screen-xs-min) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__content {
+		vertical-align: top;
+		padding: 20px;
+
+		@media (min-width: $screen-xs-min) {
+			display: inline-block;
+			width: calc(50% - 5px);
+		}
+	}
+
+	&__title {
+		margin-top: 0;
+		font-size: 16px;
+		color: $headings-color;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+		line-height: 1.35;
+	}
+
+	&--block {
+		box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+		background-color: #ffffff;
+
+		// scss-lint:disable SelectorFormat
+
+		+ .latest-news--more-news {
+			margin-top: 30px;
+			box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+		}
+	}
+
+	&:focus,
+	&:hover {
+		background-color: #eeeeee;
+		text-decoration: none;
+	}
+
+	// Inline small blocks
+	&--inline {
+		display: block;
+		background-color: #ffffff;
+
+		.latest-news__content {
+			padding: 20px;
+			width: 100%;
+		}
+
+		.latest-news__title {
+			padding-bottom: 0;
+		}
+
+		.latest-news__full-date {
+			color: $text-color;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	+ .latest-news {
+		border-top: 1px solid #e6e6e6;
+	}
+
+	&__container {
+		box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+	}
+
+	// More News Block
+	&--more-news {
+		background-color: #ffffff;
+		padding: 20px;
+		color: $primary-color;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}

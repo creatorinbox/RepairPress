@@ -1,0 +1,33 @@
+/* 05.24. Icon Menu */
+.icon-menu {
+	border-radius: 2px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+
+	&__link {
+		display: block;
+		padding: 18.5px 10px;
+		border-bottom: 1px solid rgba(0, 0, 0, .08);
+		font-weight: bold;
+		color: $headings-color;
+		transition: $primary-transition;
+
+		.fa {
+			width: 45px;
+			text-align: center;
+			color: #bbbbbb;
+			font-size: 20px;
+			vertical-align: middle;
+		}
+
+		&:focus,
+		&:hover {
+			background-color: #eeeeee;
+			text-decoration: none;
+			color: $headings-color;
+		}
+
+		&:last-of-type {
+			border-bottom: 0;
+		}
+	}
+}

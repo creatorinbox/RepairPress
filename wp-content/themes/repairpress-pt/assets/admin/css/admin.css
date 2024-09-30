@@ -1,0 +1,23 @@
+/**
+ * Admin CSS
+ */
+
+.pt-widget-single-accordion-item,
+.pt-widget-single-step,
+.pt-widget-single-icon-menu-item {
+	padding: 0 10px;
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.03);
+	margin-bottom: 10px;
+}
+
+.pt-remove-accordion-item,
+.pt-remove-step-item,
+.pt-remove-icon-menu-item {
+	text-decoration: none;
+}
+
+/* Icon box */
+.icon-widget {
+	margin-right: 5px;
+}

@@ -1,0 +1,19 @@
+/* 05.17. Button With Title */
+.title-with-button {
+	position: relative;
+
+	.widget-title {
+		font-size: 24px;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 0;
+
+		@media (min-width: $screen-xs-min) {
+			font-size: 36px;
+		}
+	}
+
+	&__button {
+		float: right;
+	}
+}

@@ -1,0 +1,29 @@
+/* 05.03. Main Title */
+.main-title {
+	background-color: $light-color;
+	margin-bottom: 30px;
+	padding: 50px 0;
+	border-bottom: 1px solid #eeeeee;
+
+	@media (min-width: $screen-md-min) {
+		padding: 100px 0 50px;
+	}
+
+	&__primary {
+		font-size: 36px;
+		color: $headings-color;
+		margin: 0;
+
+		@media (min-width: $screen-md-min) {
+			font-size: 48px;
+		}
+	}
+
+	&__secondary {
+		font-family: $secondary-font;
+		font-size: 16px;
+		color: $text-color;
+		margin: 10px 0 0;
+		font-weight: normal;
+	}
+}

@@ -1,0 +1,26 @@
+{{{ args.before_widget }}}
+
+	<div class="person-profile">
+		{{# instance.image_is_set }}
+		<img class="person-profile__image" src="{{ instance.image }}" alt="{{ text.picture_of }} {{ instance.name }}">
+		{{/ instance.image_is_set }}
+		<div class="person-profile__container">
+			<div class="person-profile__content">
+				{{# instance.tag_is_set }}
+					<span class="person-profile__tag"> {{ instance.tag }} </span>
+				{{/ instance.tag_is_set }}
+				<h3 class="person-profile__name">{{ instance.name }}</h3>
+				<p class="person-profile__description">{{ instance.description }}</p>
+			</div>
+			{{# instance.social_icons_are_set }}
+				<div class="person-profile__social-icons">
+					<span>{{ text.meet_me_on }}</span>
+					{{# instance.social_icons }}
+						<a class="person-profile__social_icon" href="{{ link }}" target="{{ instance.new_tab }}"><i class="fa  {{ icon }}"></i></a>
+					{{/ instance.social_icons }}
+				</div>
+			{{/ instance.social_icons_are_set }}
+		</div>
+	</div>
+
+{{{ args.after_widget }}}

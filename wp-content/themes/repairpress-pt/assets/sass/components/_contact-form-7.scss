@@ -1,0 +1,72 @@
+/* 05.18. Contact Form 7 */
+.wpcf7-select,
+.wpcf7-text,
+.wpcf7-number,
+.wpcf7-date,
+.wpcf7-textarea {
+	background-color: $light-color;
+	border-radius: 2px;
+	border: 1px solid #eeeeee;
+	box-shadow: none;
+	width: 100%;
+	padding: 17.5px 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: $text-color;
+	transition: $primary-transition;
+
+	&:focus {
+		border-color: #eeeeee;
+		background-color: #ffffff;
+		outline: none;
+	}
+}
+
+.wpcf7-textarea {
+	height: 220px;
+	margin-bottom: 0;
+
+	@media (min-width: $screen-xs-min) {
+		margin-bottom: 20px;
+	}
+}
+
+.wpcf7-submit {
+	margin-bottom: 15px;
+	margin-top: 20px;
+
+	@media (min-width: $screen-xs-min) {
+		float: right;
+		margin-top: -40px;
+	}
+}
+
+.wpcf7 {
+	.wpcf7-response-output {
+		margin: 5px 0;
+		padding: 10px 20px;
+		border-radius: 2px;
+	}
+
+	.wpcf7-validation-errors {
+		background-color: #faf8d2;
+		border: 2px solid #faf8d2;
+		color: darken(#faf8d2, 50);
+	}
+
+	.wpcf7-mail-sent-ng {
+		background-color: #ffe5e5;
+		border: 2px solid #ffe5e5;
+		color: darken(#ffe5e5, 50);
+	}
+
+	.wpcf7-mail-sent-ok {
+		background-color: #dcf2dc;
+		border: 2px solid #dcf2dc;
+		color: darken(#dcf2dc, 50);
+	}
+
+	.wpcf7-not-valid-tip {
+		margin: 0 0 5px;
+	}
+}

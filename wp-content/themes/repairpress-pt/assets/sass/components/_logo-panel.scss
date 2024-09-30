@@ -1,0 +1,26 @@
+/* 05.16. Logo Panel (Normal TextWidget) */
+.logo-panel {
+	text-align: center;
+
+	@media (min-width: $screen-md-min) {
+		text-align: left;
+	}
+
+	img {
+		border: 1px solid rgba(0, 0, 0, .08);
+		opacity: .6;
+		transition: $primary-transition;
+		margin-bottom: 20px;
+		border-radius: 2px;
+
+		@media (min-width: $screen-md-min) {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			border: 1px solid transparent;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,103 @@
+/* 05.29. Accordion */
+.accordion {
+	box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+
+	&__panel {
+		a {
+			position: relative;
+			display: block;
+			color: $headings-color;
+			padding: 22px 20px 22px 55px;
+			font-size: 14px;
+			border-top: 1px solid rgba(0, 0, 0, .08);
+			transition: $primary-transition;
+
+			&::before {
+				position: absolute;
+				content: '\f068';
+				font-family: 'FontAwesome';
+				left: 15.5px;
+				top: calc(50% - 12.5px);
+				background-color: #eeeeee;
+				width: 25px;
+				height: 25px;
+				text-align: center;
+				line-height: 26px;
+				color: $text-color;
+			}
+
+			&.collapsed {
+				&::before {
+					content: '\f067';
+				}
+			}
+
+			&:focus {
+				text-decoration: none;
+			}
+
+			&:hover {
+				text-decoration: none;
+				background-color: #eeeeee;
+			}
+		}
+
+		&:first-of-type {
+			a {
+				border-top: 0;
+			}
+		}
+	}
+
+	&__content {
+		.panel-body {
+			font-size: 14px;
+			padding: 20px 20px 20px 55px;
+			font-family: $secondary-font;
+			border-top: 1px solid rgba(0, 0, 0, .08);
+		}
+	}
+
+	.panel-title {
+		margin: 0;
+
+		a {
+			&[aria-expanded="true"] {
+				background-color: #eeeeee;
+			}
+		}
+	}
+
+	.more-link {
+		position: relative;
+		display: block;
+		border-top: 1px solid rgba(0, 0, 0, .08);
+		padding: 18.5px 20px 18.5px 55px;
+		transition: $primary-transition;
+
+		&::before {
+			position: absolute;
+			content: '\f0c9';
+			font-family: 'FontAwesome';
+			left: 15.5px;
+			top: calc(50% - 12.5px);
+			background-color: #eeeeee;
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			line-height: 26px;
+			color: $text-color;
+		}
+
+		&::after {
+			right: 20px;
+			margin-left: 10px;
+		}
+
+		&:focus,
+		&:hover {
+			color: $primary-color;
+			background-color: #eeeeee;
+		}
+	}
+}

@@ -1,0 +1,139 @@
+/* 05.30. Testimonials */
+.testimonial {
+	position: relative;
+	margin-top: 60px;
+
+	@media(max-width:480px) {
+		margin: 60px 0;
+	}
+
+	&__container {
+		position: relative;
+		margin-bottom: 60px;
+	}
+
+	&__quote {
+		font-size: 16px;
+		font-family: $secondary-font;
+		margin-bottom: 10px;
+
+		@media (min-width: $screen-sm-min) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__author {
+		font-style: normal;
+		font-size: 16px;
+		font-weight: bold;
+		color: $headings-color;
+	}
+
+	&__carousel {
+		position: absolute;
+		display: inline-block;
+		background-color: $primary-color;
+		color: #ffffff;
+		bottom: -60px;
+		width: calc(50% - 5px);
+		height: 60px;
+		font-size: 22px;
+		border-radius: 2px;
+		text-align: center;
+		transition: $primary-transition;
+		box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+
+		@media (min-width: $screen-sm-min) {
+			width: 60px;
+			height: inherit;
+			top: 0;
+			bottom: 6px;
+		}
+
+		&:focus {
+			color: #ffffff;
+			background-color: $primary-color;
+		}
+
+		&:hover {
+			color: #ffffff;
+			background-color: darken($primary-color, 5);
+		}
+
+		&--right {
+			right: 0;
+
+			@media (min-width: $screen-sm-min) {
+				margin-left: 15px;
+			}
+		}
+
+		.fa {
+			position: absolute;
+			left: calc(50% - 3px);
+			top: calc(50% - 11px);
+		}
+	}
+
+	&__backgroundquotes {
+		&::before,
+		&::after {
+			@media (min-width: $screen-md-min) {
+				position: absolute;
+				content: '“';
+				color: #f6f6f6;
+				font-family: Georgia, "Times New Roman";
+				font-size: 800px;
+				line-height: 1;
+			}
+		}
+
+		&::before {
+			@media (min-width: $screen-md-min) {
+				left: 0;
+				bottom: -540px;
+			}
+		}
+
+		&::after {
+			@media (min-width: $screen-md-min) {
+				right: 0;
+				bottom: -115px;
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	.carousel {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		background-color: #ffffff;
+		border-radius: 2px;
+		margin-bottom: 10px;
+		padding: 20px;
+		width: 100%;
+		overflow: hidden;
+
+		@media (min-width: $screen-sm-min) {
+			width: calc(100% - 150px);
+			padding: 60px 120px 45px;
+			margin-left: 75px;
+			margin-bottom: 0;
+		}
+
+	}
+
+	blockquote {
+		padding: 0;
+		margin: 0;
+		border-left: 0;
+	}
+
+	.widget-title {
+		position: absolute;
+		width: 100%;
+		z-index: 99;
+		top: -50px;
+	}
+}

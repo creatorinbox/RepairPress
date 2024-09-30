@@ -1,0 +1,133 @@
+/* 05.10. Jumbotron */
+.jumbotron {
+	position: relative;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+	margin-bottom: 30px;
+
+	@media (min-width: $screen-md-min) {
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	&-content {
+		margin-bottom: 30px;
+
+		@media (min-width: $screen-md-min) {
+			position: absolute;
+			margin-bottom: 0;
+			width: 520px;
+			top: 15%;
+		}
+
+		@media (min-width: 1380px) {
+			top: 18%;
+			width: 620px;
+		}
+
+		@media (min-width: 1700px) {
+			top: 26%;
+		}
+
+		&__title {
+			color: $headings-color;
+
+			h1 {
+				font-size: 36px;
+				line-height: 1.33;
+				font-weight: bold;
+
+				@media (min-width: 1380px) {
+					font-size: 48px;
+					margin-bottom: 22px;
+				}
+			}
+		}
+
+		&__description {
+			color: #666666;
+			font-family: $secondary-font;
+			font-size: 14px;
+			line-height: 1.6;
+
+			@media (min-width: 1380px) {
+				font-size: 16px;
+			}
+
+			.btn {
+				margin-top: 15px;
+
+				@media (min-width: 1380px) {
+					margin-top: 35px;
+				}
+			}
+		}
+	}
+
+	&__control {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		background-color: #ffffff;
+		color: $text-color;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+		border-radius: 2px;
+		text-align: center;
+		line-height: 60px;
+		top: 18px;
+		font-size: 20px;
+		transition: $primary-transition;
+
+		@media (min-width: $screen-xs-min) {
+			top: 45px;
+		}
+
+		@media (min-width: $screen-sm-min) {
+			top: 100px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			top: calc(50% - 30px);
+		}
+
+		&:hover,
+		&:focus {
+			color: #666666;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+		}
+
+		&:active {
+			box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+		}
+
+		&.left {
+			padding-right: 2px;
+			left: 10px;
+
+			@media (min-width: $screen-md-min) {
+				left: inherit;
+				right: 100px;
+			}
+
+			@media (min-width: 1380px) {
+				left: 30px;
+				right: inherit;
+			}
+		}
+
+		&.right {
+			padding-left: 2px;
+			right: 10px;
+
+			@media (min-width: $screen-md-min) {
+				right: 30px;
+			}
+		}
+	}
+
+	.carousel {
+		img {
+			width: 100%;
+		}
+	}
+}
